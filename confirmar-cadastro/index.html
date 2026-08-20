@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#061117" />
+  <meta name="color-scheme" content="dark" />
+  <title>Confirmar cadastro · Gestor Pro</title>
+  <meta name="description" content="Confirme seu e-mail para concluir o cadastro no Gestor Pro." />
+  <style>
+    :root{
+      --bg:#04090d;--panel:#08141b;--panel2:#0b1b24;--line:rgba(143,175,190,.16);
+      --text:#eef8fa;--muted:#8aa0ad;--muted2:#637785;--accent:#35d6c2;--accent2:#6cf0df;
+      --danger:#ff6d75;--success:#48df9b;--shadow:0 28px 90px rgba(0,0,0,.52);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+    body{
+      min-height:100vh;min-height:100dvh;display:grid;place-items:center;padding:24px;overflow-x:hidden;
+      background:
+        radial-gradient(circle at 16% 15%,rgba(53,214,194,.13),transparent 30%),
+        radial-gradient(circle at 82% 78%,rgba(53,214,194,.06),transparent 27%),
+        linear-gradient(180deg,#051016 0%,#02070a 100%);
+    }
+    body::before{
+      content:"";position:fixed;inset:0;pointer-events:none;opacity:.28;
+      background-image:linear-gradient(rgba(68,163,155,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(68,163,155,.04) 1px,transparent 1px);
+      background-size:44px 44px;mask-image:linear-gradient(to bottom,black,transparent 80%);
+    }
+    .shell{width:min(920px,100%);position:relative;z-index:1}
+    .brandbar{display:flex;align-items:center;justify-content:space-between;gap:18px;margin:0 0 18px;padding:0 4px}
+    .brand{display:flex;align-items:center;gap:11px;color:var(--text);text-decoration:none}
+    .logo{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;border:1px solid rgba(53,214,194,.34);background:linear-gradient(145deg,rgba(53,214,194,.22),rgba(53,214,194,.06));color:#b9fff5;font-weight:900;font-size:19px}
+    .brand-copy strong{display:block;font-size:16px;letter-spacing:-.02em}
+    .brand-copy span{display:block;margin-top:2px;color:var(--muted2);font-size:11px}
+    .secure{display:flex;align-items:center;gap:7px;color:#9bd8d2;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding:8px 11px;border:1px solid rgba(53,214,194,.14);border-radius:999px;background:rgba(53,214,194,.05)}
+    .secure i{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px rgba(53,214,194,.75)}
+    .card{display:grid;grid-template-columns:.92fr 1.08fr;min-height:520px;border:1px solid var(--line);border-radius:28px;overflow:hidden;background:rgba(7,17,23,.94);box-shadow:var(--shadow)}
+    .side{position:relative;overflow:hidden;padding:52px 46px;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid rgba(143,175,190,.10);background:linear-gradient(145deg,rgba(53,214,194,.09),transparent 45%),linear-gradient(180deg,#07171d,#07111a)}
+    .side::after{content:"";position:absolute;width:300px;height:300px;right:-130px;bottom:-150px;border-radius:50%;border:1px solid rgba(53,214,194,.13);box-shadow:0 0 0 42px rgba(53,214,194,.025),0 0 0 90px rgba(53,214,194,.018)}
+    .eyebrow{display:flex;align-items:center;gap:8px;color:#8ee9dd;font-size:11px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px rgba(53,214,194,.6)}
+    .side h1{font-size:40px;line-height:1.04;letter-spacing:-.052em;margin:22px 0 16px;max-width:400px}
+    .side h1 span{color:var(--accent2)} .side p{margin:0;color:#9aadb7;font-size:14px;line-height:1.7;max-width:390px}
+    .points{display:grid;gap:12px;margin-top:31px} .point{display:flex;align-items:center;gap:12px;color:#afc0c8;font-size:12px}
+    .point b{width:27px;height:27px;border-radius:9px;display:grid;place-items:center;background:rgba(53,214,194,.08);border:1px solid rgba(53,214,194,.16);color:#8ff2e4;font-size:12px}
+    .side-foot{position:relative;z-index:2;color:#526975;font-size:10px;text-transform:uppercase;letter-spacing:.14em;font-weight:800}
+    .content{padding:48px 50px;display:flex;align-items:center;text-align:center} .state{width:100%;max-width:430px;margin:auto}
+    .icon{width:74px;height:74px;border-radius:24px;display:grid;place-items:center;margin:0 auto 22px;font-size:31px;border:1px solid rgba(53,214,194,.20);background:rgba(53,214,194,.075);color:#a7f5e9}
+    .spinner{width:28px;height:28px;border-radius:50%;border:3px solid rgba(53,214,194,.18);border-top-color:var(--accent);animation:spin .8s linear infinite}
+    @keyframes spin{to{transform:rotate(360deg)}}
+    h2{font-size:30px;line-height:1.1;letter-spacing:-.045em;margin:0 0 11px}
+    .lead{margin:0 auto;color:var(--muted);font-size:13px;line-height:1.65;max-width:410px}
+    .status{display:inline-flex;align-items:center;gap:7px;margin-bottom:18px;padding:7px 10px;border-radius:999px;border:1px solid rgba(53,214,194,.14);background:rgba(53,214,194,.05);color:#9fe9df;font-size:10px;font-weight:900;letter-spacing:.07em;text-transform:uppercase}
+    .status::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+    .hint{margin:22px auto 0;padding:12px 14px;border:1px solid rgba(143,175,190,.11);border-radius:12px;background:rgba(255,255,255,.018);color:#657b86;font-size:10.5px;line-height:1.55;max-width:390px}
+    .state.success .icon{color:#acf6d3;border-color:rgba(72,223,155,.22);background:rgba(72,223,155,.08)}
+    .state.error .icon{color:#ffc0c4;border-color:rgba(255,109,117,.20);background:rgba(255,109,117,.07)}
+    .state.error .status{color:#ffb9be;border-color:rgba(255,109,117,.18);background:rgba(255,109,117,.06)}
+    .hidden{display:none!important}
+    @media(max-width:760px){
+      body{padding:14px} .secure{display:none} .card{grid-template-columns:1fr;min-height:0;border-radius:22px}
+      .side{display:none} .content{padding:42px 24px} h2{font-size:27px}
+    }
+    @media(max-width:420px){body{padding:10px} .logo{width:38px;height:38px;border-radius:12px} .content{padding:34px 18px}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <div class="brandbar">
+      <div class="brand">
+        <div class="logo">G</div>
+        <div class="brand-copy"><strong>Gestor Pro</strong><span>Gestão inteligente de clientes</span></div>
+      </div>
+      <div class="secure"><i></i> Conexão segura</div>
+    </div>
+
+    <section class="card">
+      <aside class="side">
+        <div>
+          <div class="eyebrow">Confirmação de cadastro</div>
+          <h1>Seu acesso começa com um e-mail <span>confirmado.</span></h1>
+          <p>A confirmação protege sua conta e garante que somente você possa usar o endereço informado no Gestor Pro.</p>
+          <div class="points">
+            <div class="point"><b>✓</b><span>Confirmação segura pelo Supabase.</span></div>
+            <div class="point"><b>✓</b><span>Mesma conta no PC e no Android.</span></div>
+            <div class="point"><b>✓</b><span>Depois é só voltar ao aplicativo e entrar.</span></div>
+          </div>
+        </div>
+        <div class="side-foot">Gestor Pro · Conta protegida</div>
+      </aside>
+
+      <div class="content">
+        <div class="state" id="loadingState">
+          <div class="status">Verificando confirmação</div>
+          <div class="icon"><span class="spinner"></span></div>
+          <h2>Confirmando seu cadastro</h2>
+          <p class="lead">Estamos validando o link enviado para o seu e-mail. Isso leva apenas alguns segundos.</p>
+        </div>
+
+        <div class="state success hidden" id="successState">
+          <div class="status">E-mail confirmado</div>
+          <div class="icon">✓</div>
+          <h2>Cadastro confirmado com sucesso</h2>
+          <p class="lead">Sua conta está pronta. Feche esta página e volte ao Gestor Pro no PC ou Android para entrar com seu e-mail e senha.</p>
+          <div class="hint">Tudo certo. Esta página não redireciona automaticamente para evitar abrir uma tela desnecessária no navegador.</div>
+        </div>
+
+        <div class="state error hidden" id="errorState">
+          <div class="status">Link inválido</div>
+          <div class="icon">!</div>
+          <h2>Não foi possível confirmar</h2>
+          <p class="lead" id="errorText">Este link é inválido, expirou ou já foi utilizado. Volte ao Gestor Pro e tente entrar com sua conta.</p>
+          <div class="hint">Se a conta ainda não estiver confirmada, faça um novo cadastro ou solicite um novo e-mail de confirmação.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    const SUPABASE_URL = "https://lauedzvwxhncdcabwarl.supabase.co";
+    const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_0Mha1TIugXDxzdD4_zx-lw_3g0TPoXI";
+    const client = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
+      auth: {
+        detectSessionInUrl: true,
+        persistSession: false,
+        autoRefreshToken: false
+      }
+    });
+
+    const loadingState = document.getElementById('loadingState');
+    const successState = document.getElementById('successState');
+    const errorState = document.getElementById('errorState');
+    const errorText = document.getElementById('errorText');
+
+    function show(which) {
+      loadingState.classList.toggle('hidden', which !== 'loading');
+      successState.classList.toggle('hidden', which !== 'success');
+      errorState.classList.toggle('hidden', which !== 'error');
+    }
+
+    function cleanUrl() {
+      try { history.replaceState({}, document.title, location.pathname); } catch (_) {}
+    }
+
+    function readUrlError() {
+      const query = new URLSearchParams(location.search);
+      const hash = new URLSearchParams(location.hash.replace(/^#/, ''));
+      return query.get('error_description') || hash.get('error_description') || query.get('error') || hash.get('error') || '';
+    }
+
+    async function getConfirmedSession() {
+      const urlError = readUrlError();
+      if (urlError) throw new Error(decodeURIComponent(urlError.replace(/\+/g, ' ')));
+
+      // Compatível também com projetos que utilizem PKCE.
+      const code = new URLSearchParams(location.search).get('code');
+      if (code) {
+        const { error } = await client.auth.exchangeCodeForSession(code);
+        if (error) throw error;
+      }
+
+      for (let i = 0; i < 12; i++) {
+        const { data, error } = await client.auth.getSession();
+        if (error) throw error;
+        if (data?.session?.user) return data.session;
+        await new Promise(resolve => setTimeout(resolve, 150));
+      }
+
+      throw new Error('Este link de confirmação é inválido, expirou ou já foi utilizado.');
+    }
+
+    async function init() {
+      show('loading');
+      try {
+        const session = await getConfirmedSession();
+
+        // O link de confirmação já confirmou o e-mail no Supabase.
+        // Não deixamos uma sessão do usuário aberta no site, pois o login será feito no app.
+        if (!session?.user?.email_confirmed_at && !session?.user?.confirmed_at) {
+          throw new Error('A confirmação ainda não foi concluída. Tente abrir novamente o link recebido por e-mail.');
+        }
+
+        cleanUrl();
+        try { await client.auth.signOut(); } catch (_) {}
+        show('success');
+      } catch (err) {
+        console.error(err);
+        cleanUrl();
+        errorText.textContent = err?.message || 'Não foi possível validar este link de confirmação.';
+        show('error');
+      }
+    }
+
+    client.auth.onAuthStateChange((event) => {
+      if (event === 'SIGNED_IN') {
+        // O init() faz a validação final e encerra a sessão web.
+      }
+    });
+
+    init();
+  </script>
+</body>
+</html>
