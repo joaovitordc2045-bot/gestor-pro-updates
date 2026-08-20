@@ -1,7 +1,7 @@
 ﻿{
-    "version":  "0.2.3",
-    "apk_url":  "https://github.com/joaovitordc2045-bot/gestor-pro-updates/releases/download/android-v0.2.3/Gestor-Pro-Android-0.2.3.apk",
-    "sha256":  "f6c6a4fb5036c127913537c9b322a20c6bf2b74ca026e1d079c36b31f9b22378",
-    "notes":  "Gestor Pro Android v0.2.3\n- Primeiro teste oficial de atualização pelo próprio aplicativo.\n- Mantém o novo ícone oficial do Gestor Pro.\n- Instalador interno de atualizações aprimorado.\n- Melhorias de estabilidade no fluxo de atualização Android.",
+    "version":  "0.2.5",
+    "apk_url":  "https://github.com/joaovitordc2045-bot/gestor-pro-updates/releases/download/android-v0.2.5/Gestor-Pro-Android-0.2.5.apk",
+    "sha256":  "6e135d6d6a1500080de4857a373bc4c61aeca48c5671f0218cb93c4eec2f61e7",
+    "notes":  "Gestor Pro Android v0.2.5\n- Teste final do sistema de atualização automática.\n- Atualização interna usando PackageInstaller.Session do Android.\n- Mantém validação SHA-256, packageName e versionCode.\n- Mantém o ícone oficial do Gestor Pro.",
     "mandatory":  false
 }
