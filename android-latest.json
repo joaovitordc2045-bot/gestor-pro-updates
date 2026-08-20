@@ -1,7 +1,7 @@
 ﻿{
-    "version":  "0.2.7",
-    "apk_url":  "https://github.com/joaovitordc2045-bot/gestor-pro-updates/releases/download/android-v0.2.7/Gestor-Pro-Android-0.2.7.apk",
-    "sha256":  "21ef22e1a2a5fbfcf53ea0062e8ba66b140dc01f291c0d535cc54971a74e0d19",
-    "notes":  "Gestor Pro Android v0.2.7\n- Adiciona a opção \"Sair da conta\" no menu Mais da versão Android.\n- Corrige a identificação interna da versão do aplicativo após uma atualização.\n- Evita que o aviso de atualização continue aparecendo depois de instalar a versão mais recente.\n- Mantém o sistema de atualização automática, validação SHA-256, packageName, versionCode e o ícone oficial.",
+    "version":  "0.2.8",
+    "apk_url":  "https://github.com/joaovitordc2045-bot/gestor-pro-updates/releases/download/android-v0.2.8/Gestor-Pro-Android-0.2.8.apk",
+    "sha256":  "012f8e859ba173a0e07af0614fae4a1d12346d05492793cb5d7061fb31914947",
+    "notes":  "Gestor Pro Android v0.2.8\n- Adiciona a opção \"Sair da conta\" no menu Mais da versão Android.\n- Corrige a identificação interna da versão do aplicativo após uma atualização.\n- Evita que o aviso de atualização continue aparecendo depois de instalar a versão mais recente.\n- Mantém o sistema de atualização automática, validação SHA-256, packageName, versionCode e o ícone oficial.",
     "mandatory":  false
 }
