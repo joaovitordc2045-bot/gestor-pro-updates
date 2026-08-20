@@ -1,7 +1,7 @@
 ﻿{
-    "version":  "0.2.9",
-    "apk_url":  "https://github.com/joaovitordc2045-bot/gestor-pro-updates/releases/download/android-v0.2.9/Gestor-Pro-Android-0.2.9.apk",
-    "sha256":  "0b84f83698d9259fe2d0a7e922b8c9c4ac6bdc705e472ee8422e7915f9eb1ec1",
-    "notes":  "Gestor Pro Android v0.2.9\n- Novo desbloqueio por biometria no Android, sem armazenar a senha do usuário.\n- Opção Biometria no menu Mais para ativar ou desativar o acesso rápido neste celular.\n- Nova tela de desbloqueio biométrico para sessões já conectadas.\n- Melhorias visuais no Android: animações mais suaves, feedback de toque, efeito de toque e mensagens rápidas de confirmação.\n- Mantém o sistema de atualização automática, assinatura oficial e validação de segurança do APK.",
+    "version":  "0.2.10",
+    "apk_url":  "https://github.com/joaovitordc2045-bot/gestor-pro-updates/releases/download/android-v0.2.10/Gestor-Pro-Android-0.2.10.apk",
+    "sha256":  "298cfc5760a92178e137c7e29f264951b585a97a3e222a3c88cbe258f0635a5e",
+    "notes":  "Gestor Pro Android v0.2.10\n- Novo desbloqueio por biometria no Android, sem armazenar a senha do usuário.\n- Opção Biometria no menu Mais para ativar ou desativar o acesso rápido neste celular.\n- Nova tela de desbloqueio biométrico para sessões já conectadas.\n- Melhorias visuais no Android: animações mais suaves, feedback de toque, efeito de toque e mensagens rápidas de confirmação.\n- Mantém o sistema de atualização automática, assinatura oficial e validação de segurança do APK.",
     "mandatory":  false
 }
