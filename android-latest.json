@@ -1,7 +1,7 @@
-{
-  "version": "0.2.1",
-  "apk_url": "",
-  "sha256": "",
-  "notes": "Atualização automática do Gestor Pro Android preparada.",
-  "mandatory": false
+﻿{
+    "version":  "0.2.2",
+    "apk_url":  "https://github.com/joaovitordc2045-bot/gestor-pro-updates/releases/download/android-v0.2.2/Gestor-Pro-Android-0.2.2.apk",
+    "sha256":  "713b757f51b09ac7a59e436fd371a017e9c38e824277e89372bde0b32e22096e",
+    "notes":  "Gestor Pro Android v0.2.2\n- Ícone oficial do Gestor Pro aplicado ao aplicativo.\n- Continuidade do sistema de atualização automática.\n- Ajustes de apresentação e identificação do app.",
+    "mandatory":  false
 }
