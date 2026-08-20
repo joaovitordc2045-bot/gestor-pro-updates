@@ -1,0 +1,25 @@
+GESTOR PRO - PÁGINA DE REDEFINIÇÃO DE SENHA
+
+Arquivos:
+- redefinir-senha/index.html
+
+URL final:
+https://gestorpro.app.br/redefinir-senha/
+
+PRÓXIMOS PASSOS NO GITHUB:
+1. Abra o repositório gestor-pro-updates.
+2. Entre em Code.
+3. Faça upload da pasta "redefinir-senha" mantendo o arquivo index.html dentro dela.
+4. Aguarde o GitHub Pages publicar.
+
+PRÓXIMOS PASSOS NO SUPABASE:
+Authentication -> URL Configuration -> Redirect URLs
+Adicionar exatamente:
+https://gestorpro.app.br/redefinir-senha/
+
+Depois, o programa do PC/Android deve usar este redirect em resetPasswordForEmail:
+https://gestorpro.app.br/redefinir-senha/
+
+Observação:
+A página usa somente a chave pública/publishable do Supabase.
+Nenhuma service_role foi incluída.
