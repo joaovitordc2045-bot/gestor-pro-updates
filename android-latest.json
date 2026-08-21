@@ -1,7 +1,7 @@
 ﻿{
-    "version":  "0.2.9",
-    "apk_url":  "https://github.com/joaovitordc2045-bot/gestor-pro-updates/releases/download/android-v0.2.9/Gestor-Pro-Android-0.2.9.apk",
-    "sha256":  "06697e71496e7e9c03cc3978616c8c6f9a0a84f04fc9f06d8d9f34b7b988a202",
-    "notes":  "Gestor Pro Android v0.2.9\n- Base estável anterior à biometria.\n- Mantém atualização automática, logout Android e recursos já validados.\n- Biometria e polimento visual experimental removidos.",
+    "version":  "0.2.12",
+    "apk_url":  "https://github.com/joaovitordc2045-bot/gestor-pro-updates/releases/download/android-v0.2.12/Gestor-Pro-Android-0.2.12.apk",
+    "sha256":  "3dae7dfcc9fba612f5943308a0afc98e3337a1ce4f0bec60607215c2c6b59a53",
+    "notes":  "Gestor Pro Android v0.2.12\n- Retorno à base estável anterior à biometria.\n- Remove biometria e polimento visual experimental.\n- Mantém atualização automática, logout Android e recursos já validados.\n- Correção técnica de rollback usando versionCode 211 para atualizar sobre a v0.2.10.",
     "mandatory":  false
 }
