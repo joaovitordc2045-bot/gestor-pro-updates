@@ -1,7 +1,7 @@
 {
-    "version":  "0.2.18",
-    "apk_url":  "https://github.com/joaovitordc2045-bot/gestor-pro-updates/releases/download/android-v0.2.18/Gestor-Pro-Android-0.2.18.apk",
-    "sha256":  "3ee4c5541c01e8e41058c26d36b60059d81ec6a5bf3e77ba2a60a37b88e85646",
+    "version":  "0.2.20",
+    "apk_url":  "https://github.com/joaovitordc2045-bot/gestor-pro-updates/releases/download/android-v0.2.20/Gestor-Pro-Android-0.2.20.apk",
+    "sha256":  "112457f74b8ecef7c530682a2127af8da52232f60f8f841ca777ab71eb22d643",
     "notes":  "Gestor Pro Android v0.2.17\n- Melhorias e correções desta versão.",
     "mandatory":  false
 }
