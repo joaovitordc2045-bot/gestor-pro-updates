@@ -1,0 +1,20 @@
+﻿{
+    "windows":  {
+                    "version":  "1.0.18",
+                    "download_url":  "https://github.com/joaovitordc2045-bot/gestor-pro-updates/releases/download/v1.0.18/Gestor-Pro-Setup-1.0.18.exe",
+                    "tag":  "v1.0.18"
+                },
+    "android":  {
+                    "version":  "0.2.30",
+                    "download_url":  "https://github.com/joaovitordc2045-bot/gestor-pro-updates/releases/download/android-v0.2.30/Gestor-Pro-Android-0.2.30.apk",
+                    "tag":  "android-v0.2.30",
+                    "sha256":  "33178b70ebb0285696302b2c8323fa1660bef3235856fbd5019f8e908a5c0b61"
+                },
+    "web":  {
+                "url":  "https://app.gestorpro.log.br"
+            },
+    "site":  {
+                 "url":  "https://gestorpro.log.br"
+             },
+    "generated_at":  "2026-08-28T17:58:22-03:00"
+}

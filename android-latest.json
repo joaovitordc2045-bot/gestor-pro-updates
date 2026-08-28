@@ -1,8 +1,8 @@
 ﻿{
     "version":  "0.2.30",
-    "apk_url":  "https://gestorpro.log.br/downloads/Gestor-Pro-Android-0.2.30.apk",
-    "sha256":  "568568350ecb2eb09eb32f26e63d9af4e95542f50b6405a0ed590fcf31b9637c",
+    "apk_url":  "https://github.com/joaovitordc2045-bot/gestor-pro-updates/releases/download/android-v0.2.30/Gestor-Pro-Android-0.2.30.apk",
+    "sha256":  "33178b70ebb0285696302b2c8323fa1660bef3235856fbd5019f8e908a5c0b61",
     "notes":  "Atualizacao oficial do Gestor PRO Android.",
     "mandatory":  false,
-    "published_at":  "2026-08-26T22:13:35-03:00"
+    "published_at":  "2026-08-28T17:58:20-03:00"
 }
