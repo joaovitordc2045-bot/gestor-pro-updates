@@ -1,0 +1,12 @@
+CORREÇÃO V4
+
+Envie TODOS estes arquivos para a RAIZ do repositório multi-idle-arena e substitua os existentes.
+
+Corrige:
+1. Logo quebrado sem depender da pasta assets.
+2. Home reconhece quem já está logado: mostra "Minha conta" em vez de "Entrar".
+3. Botão principal vira "Ir para Minha Conta" quando a sessão já existe.
+4. A prévia genérica foi substituída pela imagem real mais recente do launcher.
+5. Mantém o botão oficial de download da versão anterior.
+
+Depois do Commit changes, aguarde o GitHub Pages atualizar e pressione Ctrl+F5.
